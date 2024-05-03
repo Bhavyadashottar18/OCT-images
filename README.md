@@ -5,15 +5,20 @@ Step into the world of ophthalmology, where Optical Coherence Tomography (OCT) r
 This project involves three main components:
 
 1.⁠ ⁠*Denoising*: OCT images are denoised using CycleGANs.
+
 2.⁠ ⁠*Super-Resolution*: Denoised images are enhanced using ESRGAN for super-resolution.
+
 3.⁠ ⁠*Volumetric Classification*: Super-resolved images are classified using a 3D CNN architecture.
 
 ## Table of Contents
 •⁠  ⁠[Project Overview](#project-overview)
 
 •⁠  ⁠[Methods](#methods)
-    - [Denoising with CycleGANs](#denoising-with-cyclegans)
+
+  - [Denoising with CycleGANs](#denoising-with-cyclegans)
+    
     - [Super-Resolution with ESRGAN](#super-resolution-with-esrgan)
+    
     - [Volumetric Classification with 3D CNN](#volumetric-classification-with-3d-cnn)
     
 •⁠  ⁠[Data](#data)
