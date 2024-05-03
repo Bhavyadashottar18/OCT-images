@@ -41,20 +41,22 @@ This project demonstrates a comprehensive approach to processing and classifying
 
 ### Denoising with CycleGANs
 •⁠  ⁠*Description*: OCT images often contain noise that can hinder analysis. We employ CycleGANs to denoise these images effectively.
-•⁠  ⁠*Details*: The CycleGAN model is trained using unpaired datasets to learn how to translate noisy images to denoised ones.
+
+•⁠  ⁠*Details*: The CycleGAN model is trained using unpaired datasets to learn how to translate noisy images to denoised ones.where as the preliminary step we have used the median filter to remove noise then we have applied cycle gans for noise removal such that we feed the filtered image to one generator and non filtered image to the other generator.
 
 ### Super-Resolution with ESRGAN
 •⁠  ⁠*Description*: After denoising, we enhance the images using ESRGAN to achieve super-resolution.
-•⁠  ⁠*Details*: The ESRGAN model is trained on pairs of low-resolution and high-resolution images to produce high-quality super-resolved images.
+
+•⁠  ⁠*Details*: The ESRGAN model is trained on pairs of low-resolution and high-resolution images to produce high-quality super-resolved images.Here the intial layer does the feature extreaction, the middle block has upsampling layer has transpose convolution with leaky relu activation finally the third block has the image reconstruction block to give us the super resolved image.
 
 ### Volumetric Classification with 3D CNN
 •⁠  ⁠*Description*: We classify volumetric OCT images using a 3D CNN architecture.
-•⁠  ⁠*Details*: The 3D CNN model is trained to classify images into different categories based on their volumetric features.
+
+•⁠  ⁠*Details*: The 3D CNN model is trained to classify images into different categories based on their volumetric features.Here we have used a 3D CNN model where we have fed it images of depth 3 that a single grayscale image is a combination of three grayscale images stacked together then finally the images are classified into the following three categories a)Normal b)Diabetic c)Non-Diabetic.
 
 ## Data
 
-•⁠  ⁠*Dataset*: Provide information on the dataset used, including how to obtain it and any preprocessing steps.
-•⁠  ⁠*Data Structure*: Describe the data structure and how the data is organized.
+•⁠  ⁠*Dataset*: The dataset that we are working is divided into three classes namely diabetic, normal and non-diabetic patient. Inside each class we have the folders corresponding to a particular patient with oct scans taken at different angles and this number of angles is also variable depending on the number of images in that folder for that patient.
 
 ## Setup
 
