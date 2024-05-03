@@ -95,16 +95,26 @@ To set up the project, follow these steps:
 
 ## Results
 
-Provide a summary of the results obtained from each method, including any relevant metrics or visualizations.
+•⁠  ⁠*Result of Denoising*:
+    
+     ⁠
+
+•⁠  ⁠*Result of Super-Resolution*:
+    ⁠ bash
+    python super_resolution.py --input <input_folder> --output <output_folder>
+     ⁠
+
+•⁠  ⁠*Result of Volumetric Classification*:
+    ⁠ bash
+    python classify.py --input <input_folder>
 
 ## Conclusion
 
-Summarize the project's outcomes, including the improvements made in OCT image quality and classification accuracy. Discuss any limitations encountered and potential areas for future work.
+In conclusion, the use of machine learning models such as CycleGANs, super-resolution networks, and 3D CNNs for processing and analyzing OCT images has proven to be a successful approach for advancing medical imaging research. The CycleGAN model effectively denoised the OCT images, removing artifacts and enhancing image quality without the need for paired training data. Following the denoising process, the super-resolution model significantly improved the resolution and detail of the images, enabling better visualization and analysis. Finally, the 3D CNN model demonstrated robust performance in volumetric classification, successfully distinguishing between different classes of medical conditions based on the enhanced OCT scans.
 
 ## License
 
-Provide information about the project's license.
-
+we will provide it later.
 ---
 
 We hope you find this project useful and welcome contributions and feedback! Feel free to open an issue or pull request if you have any suggestions or improvements.
